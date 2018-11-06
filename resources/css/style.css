@@ -1,8 +1,10 @@
-html {
+ /* Overall Stuff */ 
+ html {
 	font-size: 18px;
 }
 
 .container {
+max-width: 100%;
 width: 960px;
 align-content: center;
 }
@@ -20,12 +22,15 @@ header img {
 	display: inline-block;
 	height: 1.5rem;
 	padding: 0 1rem 0 0.5rem;
+	vertical-align: middle;
 }
 
 header h4 {
 	display: inline-block;
 	padding: 0.66rem 0;
 }
+
+/* Main Body */
 
 .background {
 	height: 25rem;
@@ -57,3 +62,131 @@ header h4 {
 	font-size: 2rem;
 	font-weight: bold;
 }
+
+/* Nav */
+
+#nav {
+	text-align: justify;
+	background-color: firebrick;
+	width: 100%;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+
+#nav li {
+	width: calc(100% / 6);
+	font-family: Helvetica;
+	font-size: 1rem;
+	color: white;
+	padding: 0.75rem 0;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+}
+
+/* Items */
+
+.items {
+padding-top: 3rem;
+padding-bottom: 3rem;
+}
+
+
+table {
+	max-width: 100%;
+	border-collapse: separate;
+
+}
+
+.items #info {
+	width: 30%;
+	text-align: center;
+	border: 4px solid black;
+}
+
+th#info {
+	background-color: black;
+	color: white;
+	font-size: 1rem;
+	font-family: Helvetica;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+
+.items #space {
+	width: 5%;
+	color: white;
+	background-color: white;
+	border-bottom: 4px solid white;
+	border radius: 0%;
+}
+
+.items td img {
+	height: 9rem;
+	width: 100%;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+#locations {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+#numbers {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+#locations h4 {
+	display: inline-flex;
+	background-color: black;
+	color: white;
+	font-family: Helvetica;
+	width: 35%;
+	text-align: left;
+	text-indent: 2rem;
+}
+
+#loco {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+#numbers h4 {
+	display: inline-flex;
+	text-align: left;
+}
+
+#scat {
+	width: 35%;
+	font-family: Helvetica;
+}
+
+#numbers {
+	margin-bottom: 4rem;
+}
+
+/* Footer */
+ 
+ footer {
+ 	height: 5rem;
+ 	text-align: left;
+ 	background-color: black;
+ 	color: white;
+ 	font-family: Helvetica;
+ 	position: relative;
+ 	max-width: 960px;
+
+ }
+
+ footer h5 {
+ 	position: absolute;
+ 	top: 50%;
+ 	bottom: 50%;
+ }
